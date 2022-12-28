@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS `dsra` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `dsra`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mahasiswa`
+--
+
+CREATE TABLE `mahasiswa` (
+  `nim` varchar(15) NOT NULL,
+  `nama` varchar(35) NOT NULL,
+  `jenis_kelamin` varchar(10) NOT NULL,
+  `jurusan` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `mahasiswa`
+--
+
+INSERT INTO `mahasiswa` (`nim`, `nama`, `jenis_kelamin`, `jurusan`) VALUES
+('1111', 'nana', 'Perempuan', 'Agribisnis'),
+('1112', 'Lolanda', 'Perempuan', 'Sains Data'),
+('1234', 'Hamid', 'Laki-laki', 'Sains Data'),
+('1235', 'lola', 'Perempuan', 'Sains Data'),
+('22222', 'Huda', 'Laki-laki', 'Sains Data');
